@@ -18,14 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSh-cR-6rN">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSh-cR-6rN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Lost Items" id="OXV-Jz-XNY"/>
                                 </items>
                             </navigationBar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="v1d-5V-CcL">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Dv-Mz-RLk">
+                                <rect key="frame" x="0.0" y="88" width="600" height="463"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="LMN-oG-uEm">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LMN-oG-uEm" id="VRR-ap-IlL">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wSh-cR-6rN" secondAttribute="trailing" id="Mba-jl-QyD"/>
+                            <constraint firstItem="v1d-5V-CcL" firstAttribute="top" secondItem="wSh-cR-6rN" secondAttribute="bottom" id="Rge-l3-oCJ"/>
+                            <constraint firstItem="wSh-cR-6rN" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="dYc-yY-xEb"/>
+                            <constraint firstItem="wSh-cR-6rN" firstAttribute="leading" secondItem="v1d-5V-CcL" secondAttribute="leading" id="hns-Bi-D5f"/>
+                            <constraint firstItem="wSh-cR-6rN" firstAttribute="trailing" secondItem="v1d-5V-CcL" secondAttribute="trailing" id="s9D-vs-0nq"/>
+                            <constraint firstItem="wSh-cR-6rN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="v5h-Ae-lb9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
