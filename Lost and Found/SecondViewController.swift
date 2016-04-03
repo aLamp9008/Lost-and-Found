@@ -5,33 +5,65 @@
 //  Created by alden lamp on 4/2/16.
 //  Copyright © 2016 JasonAldenVincent. All rights reserved.
 //
-
 import UIKit
 
-class SecondViewController: UIViewController {
 
-    @IBOutlet weak var personsName: UITextField!
+class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    
+    
+    
+    @IBOutlet weak var usersName: UITextField!
     @IBOutlet weak var dateLost: UITextField!
-    @IBOutlet weak var personsNumber: UITextField!
-    @IBOutlet weak var itemDescription: UITextView!
-    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var usersImage: UIImageView!
     
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
+        print("printed")
         
+        self.dismissViewControllerAnimated(true, completion: nil)
         
+        usersImage.image = image
+        
+    }
+    
+    @IBAction func importImage(sender: AnyObject) {
+        
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        image.allowsEditing = true
+        
+        self.presentViewController(image, animated: true, completion: nil)
+    }
+    
+    @IBAction func takePhoto(sender: AnyObject) {
+        
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.Camera
+        image.allowsEditing = true
+        
+        self.presentViewController(image, animated: true, completion: nil)
         
         
     }
-
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
