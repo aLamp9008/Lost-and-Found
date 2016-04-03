@@ -85,12 +85,6 @@
                                     <action selector="importImage:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="AgY-90-VhG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please type your name below:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxF-ff-6zZ">
-                                <rect key="frame" x="10" y="69" width="229" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm/dd/yy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flH-Ap-FfE">
                                 <rect key="frame" x="10" y="165" width="229" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,7 +131,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-gf-ynH">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-gf-ynH">
                                 <rect key="frame" x="10" y="555" width="570" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Post!"/>
@@ -146,7 +140,7 @@
                                     <segue destination="mxT-SC-Mrs" kind="unwind" unwindAction="unwindSegue:" id="w70-lM-if9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please write a description of this item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-rB-LJb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please write a description of this item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-rB-LJb">
                                 <rect key="frame" x="10" y="463" width="286" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="bBa-rq-e7h"/>
@@ -162,7 +156,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EM8-dx-lmY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Type here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EM8-dx-lmY">
                                 <rect key="frame" x="10" y="492" width="570" height="61"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -177,6 +171,16 @@
                                     </mask>
                                 </variation>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please type the name of the lost object:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxF-ff-6zZ">
+                                <rect key="frame" x="10" y="69" width="303" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7kH-Ls-4yv"/>
+                                    <constraint firstAttribute="width" constant="303" id="P4W-yR-oYZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -199,6 +203,8 @@
                             <constraint firstItem="EM8-dx-lmY" firstAttribute="trailing" secondItem="v2Q-gf-ynH" secondAttribute="trailing" id="IzL-He-2td"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EM8-dx-lmY" secondAttribute="trailing" constant="-20" id="JME-7J-rs5"/>
                             <constraint firstItem="EM8-dx-lmY" firstAttribute="top" secondItem="4n3-rB-LJb" secondAttribute="bottom" constant="8" symbolic="YES" id="KHj-Sf-7q5"/>
+                            <constraint firstItem="MxF-ff-6zZ" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="5" id="Msj-Ng-OHB"/>
+                            <constraint firstItem="EGs-ZC-rdA" firstAttribute="top" secondItem="MxF-ff-6zZ" secondAttribute="bottom" constant="8" id="P3L-gD-LFV"/>
                             <constraint firstItem="flH-Ap-FfE" firstAttribute="leading" secondItem="IG5-KY-mR0" secondAttribute="leading" id="Tv2-b7-uSH"/>
                             <constraint firstItem="IG5-KY-mR0" firstAttribute="top" secondItem="flH-Ap-FfE" secondAttribute="bottom" constant="20" id="VJk-Gv-Mil"/>
                             <constraint firstItem="flH-Ap-FfE" firstAttribute="trailing" secondItem="Y6H-zz-pLn" secondAttribute="trailing" id="YTi-u3-Ihg"/>
@@ -209,6 +215,7 @@
                             <constraint firstItem="4n3-rB-LJb" firstAttribute="leading" secondItem="EM8-dx-lmY" secondAttribute="leading" id="dtA-tE-Z4x"/>
                             <constraint firstItem="fSt-qK-r9H" firstAttribute="leading" secondItem="3a9-7j-udq" secondAttribute="leading" id="gMc-AV-Kci"/>
                             <constraint firstItem="v2Q-gf-ynH" firstAttribute="top" secondItem="EM8-dx-lmY" secondAttribute="bottom" constant="2" id="hC6-jt-5JW"/>
+                            <constraint firstItem="MxF-ff-6zZ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-10" id="ijs-vJ-c7w"/>
                             <constraint firstItem="3a9-7j-udq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-10" id="jbI-Yy-j0J"/>
                             <constraint firstItem="EM8-dx-lmY" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="k7e-1x-18H"/>
                             <constraint firstItem="EM8-dx-lmY" firstAttribute="top" secondItem="4n3-rB-LJb" secondAttribute="bottom" constant="8" id="pSF-Aw-jU7"/>
@@ -222,6 +229,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="6Z0-DE-RKC"/>
+                                <exclude reference="bT2-jS-lTQ"/>
+                                <exclude reference="sTo-Bz-RUQ"/>
+                                <exclude reference="xpz-A2-QEI"/>
+                                <exclude reference="H2H-1G-4Ch"/>
                                 <exclude reference="0L4-Sr-5Lm"/>
                                 <exclude reference="jbI-Yy-j0J"/>
                                 <exclude reference="IZt-yl-Zia"/>
