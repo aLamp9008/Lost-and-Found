@@ -40,14 +40,32 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func post(sender: AnyObject) {
         
+        var whileLoopNumber = 0
+        
+        while whileLoopNumber <= whileLoopNumber + 5 {
+        
+            whileLoopNumber++
+            
+        var keyName = "name\(whileLoopNumber)"
+        var keyDate = "dateLost\(whileLoopNumber)"
+        var keyNumber = "phoneNumber\(whileLoopNumber)"
+        var keyDescription = "description\(whileLoopNumber)"
+        var keyImage = "image\(whileLoopNumber)"
+        
+        
+        
+        
+        
         let base64String = imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
         
-        var userToBeAdded = ["name":  usersName.text, "description": usersDescription.text, "dateLost": dateLost.text, "phoneNumber": phoneNumber.text, "image": base64String]
+        var userToBeAdded = [keyName:  usersName.text, keyDescription: usersDescription.text, keyDate: dateLost.text, keyNumber: phoneNumber.text, keyImage: base64String]
         
         var usersRef = ref.childByAppendingPath("users")
         
         var users = ["value": userToBeAdded]
         usersRef.setValue(users)
+            
+        }
         
     }
     
