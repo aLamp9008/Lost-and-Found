@@ -44,6 +44,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         // Get a reference to our posts
         var count:UInt = 0
+        var name: String?
+        var date: String?
+        var number: String?
+        var description: String?
+        var image: AnyObject?
         
         // Retrieve new posts as they are added to the database
         ref.observeEventType(.ChildAdded, withBlock: { snapshot in
@@ -51,12 +56,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
             let stuff = JSON(snapshot.value)
             
-            var name = stuff["value"]["name"].string
-            var date = stuff["value"]["dateLost"].string
-            var number = stuff["value"]["phoneNumber"].string
-            var description = stuff["value"]["description"].string
-            var image = try? stuff["value"]["image"].rawData()
+            name = stuff["value"]["name"].string
+            date = stuff["value"]["dateLost"].string
+            number = stuff["value"]["phoneNumber"].string
+            description = stuff["value"]["description"].string
+            image = try? stuff["value"]["image"].rawData()
         })
+        
+        
+        
+
         
         // snapshot.childrenCount will always equal count since snapshot.value will include every FEventTypeChildAdded event
         // triggered before this point.
