@@ -5,6 +5,8 @@ use_frameworks!
 
 target 'Lost and Found' do
 pod 'Firebase', '>= 2.5.1'
+pod 'SwiftRequest', '0.0.4'
+pod "LiquidFloatingActionButton"
 end
 
 target 'Lost and FoundTests' do

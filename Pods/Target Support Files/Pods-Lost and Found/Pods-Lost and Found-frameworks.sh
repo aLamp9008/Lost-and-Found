@@ -85,7 +85,17 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Lost and Found/Firebase.framework"
+<<<<<<< HEAD
+  install_framework "Pods-Lost and Found/LiquidFloatingActionButton.framework"
+  install_framework "Pods-Lost and Found/SwiftRequest.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Lost and Found/Firebase.framework"
+  install_framework "Pods-Lost and Found/LiquidFloatingActionButton.framework"
+  install_framework "Pods-Lost and Found/SwiftRequest.framework"
+=======
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Lost and Found/Firebase.framework"
+>>>>>>> 37518f10577994b94f603dea25486cd7beb7e1bb
 fi
