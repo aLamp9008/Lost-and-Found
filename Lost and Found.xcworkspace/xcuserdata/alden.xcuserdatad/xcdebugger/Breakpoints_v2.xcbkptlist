@@ -15,6 +15,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "9"
             endingLineNumber = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lost_and_Found.SecondViewController.init (Lost_and_Found.SecondViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Lost_and_Found.SecondViewController"
+                  moduleName = "Lost and Found"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alden/Developer/iOS/2016/Lost%20and%20Found/Lost%20and%20Found/SecondViewController.swift"
+                  timestampString = "481345808.071611"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lost_and_Found.SecondViewController.init (Lost_and_Found.SecondViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Lost_and_Found.SecondViewController&gt;"
+                  moduleName = "Lost and Found"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alden/Developer/iOS/2016/Lost%20and%20Found/Lost%20and%20Found/SecondViewController.swift"
+                  timestampString = "481345808.071868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -1,22 +1,10 @@
 PODS:
   - Firebase (2.5.1)
-  - LiquidFloatingActionButton (0.1.2)
-  - SwiftRequest (0.0.4)
 
 DEPENDENCIES:
   - Firebase (>= 2.5.1)
-  - LiquidFloatingActionButton
-  - SwiftRequest (= 0.0.4)
 
 SPEC CHECKSUMS:
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
-  LiquidFloatingActionButton: 12ed6f642365142f85c73eaebef8c40b6590511e
-  SwiftRequest: efeebcd1a1b8f948a9121e146d6ce7ba4bbdfcfe
 
-<<<<<<< HEAD
-PODFILE CHECKSUM: e5f7e4790fa3842cce739ea75d7d1217913f9e5e
-
-COCOAPODS: 1.0.0.beta.2
-=======
 COCOAPODS: 0.39.0
->>>>>>> 37518f10577994b94f603dea25486cd7beb7e1bb

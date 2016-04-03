@@ -7,11 +7,7 @@
   <key>CFBundleExecutable</key>
   <string>${EXECUTABLE_NAME}</string>
   <key>CFBundleIdentifier</key>
-<<<<<<< HEAD
-  <string>${PRODUCT_BUNDLE_IDENTIFIER}</string>
-=======
   <string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
->>>>>>> 37518f10577994b94f603dea25486cd7beb7e1bb
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundleName</key>
