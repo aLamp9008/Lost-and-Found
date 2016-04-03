@@ -14,7 +14,7 @@ var ref = Firebase(url: "https://incandescent-fire-6594.firebaseio.com/web/savin
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var testImageData = UIImagePNGRepresentation(UIImage(named: "sampleImage")!)
+    var testImageData = UIImage(named: "sampleImage")
     @IBOutlet weak var itemsTableView: UITableView!
     let cellIdentifier = "cell"
     var itemNames = ["Test1","Test2","Test3"]
@@ -22,7 +22,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var itemImages = ["sampleImage","sampleImage","sampleImage"]
     var datesLost = ["1/1/11","2/2/22","3/3/33"]
     var phoneNumbers = ["999","9999","99999"]
-    var images:[NSData]?
+    var images:[UIImage]?
     
 
    // var refreshController: UIRefreshControl = UIRefreshControl()
@@ -44,7 +44,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         var date: String?
         var number: String?
         var description: String?
-        var image: NSData?
+        var image: UIImage?
         
         
         
@@ -58,13 +58,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             date = stuff["value"]["dateLost"].string
             number = stuff["value"]["phoneNumber"].string
             description = stuff["value"]["description"].string
-            image = try? stuff["value"]["image"].rawData()
+            print(stuff["value"]["image"])
+            do{
+                    image = try UIImage(data: stuff["value"]["image"].rawData())
+            }catch{
+                print("failed")
+            }
+            
+            
             
             self.itemNames.append(name!)
             self.itemDescriptions.append(description!)
             self.datesLost.append(date!)
             self.phoneNumbers.append(number!)
             self.images?.append(image!)
+            
             print(self.itemNames)
             self.itemsTableView.reloadData()
         })
@@ -146,7 +154,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell:LostAndFoundTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? LostAndFoundTableViewCell
         cell?.itemName.text = itemNames[indexPath.row]
         cell?.itemDescription.text = itemDescriptions[indexPath.row]
-        cell?.itemImage.image = UIImage(data: images![indexPath.row], scale:1.0)
+        cell?.itemImage.image = images![indexPath.row]
         return cell!
     }
     
