@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftyJSON
 
 var ref = Firebase(url: "https://incandescent-fire-6594.firebaseio.com/web/saving-data/fireblog")
 
@@ -39,27 +40,32 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func refresh() {
+
         
-        self.itemsTableView.reloadData()
+        // Get a reference to our posts
+        var count:UInt = 0
         
+        // Retrieve new posts as they are added to the database
         ref.observeEventType(.ChildAdded, withBlock: { snapshot in
-            let personsName = snapshot.value.objectForKey("name")
-            let dateLost = snapshot.value.objectForKey("dateLost")
-            let personsNumber = snapshot.value.objectForKey("phoneNumber")
-            let image = snapshot.value.objectForKey("image")
-            let description = snapshot.value.objectForKey("description")
+            count++
+
+            let stuff = JSON(snapshot.value)
             
-            self.itemNames.append(String(personsName))
-            self.itemDescriptions.append(String(description))
-            self.datesLost.append(String(dateLost))
-            self.phoneNumbers.append(String(personsNumber))
-            self.images.append(String(image))
-            
-            print(self.itemNames)
-            print(self.itemDescriptions)
-            
+            var name = stuff["value"]["name"].string
+            var date = stuff["value"]["dateLost"].string
+            var number = stuff["value"]["phoneNumber"].string
+            var description = stuff["value"]["description"].string
+            var image = try? stuff["value"]["image"].rawData()
         })
         
+        // snapshot.childrenCount will always equal count since snapshot.value will include every FEventTypeChildAdded event
+        // triggered before this point.
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            print("initial data loaded! \(count == snapshot.childrenCount)")
+        })
+        
+        self.itemsTableView.reloadData()
+
         
     }
 

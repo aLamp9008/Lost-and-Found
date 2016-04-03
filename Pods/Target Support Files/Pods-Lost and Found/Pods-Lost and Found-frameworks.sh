@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Lost and Found/Firebase.framework"
   install_framework "Pods-Lost and Found/MaterialKit.framework"
+  install_framework "Pods-Lost and Found/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Lost and Found/Firebase.framework"
   install_framework "Pods-Lost and Found/MaterialKit.framework"
+  install_framework "Pods-Lost and Found/SwiftyJSON.framework"
 fi
