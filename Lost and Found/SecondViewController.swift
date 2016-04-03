@@ -10,9 +10,21 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var personsName: UITextField!
+    @IBOutlet weak var dateLost: UITextField!
+    @IBOutlet weak var personsNumber: UITextField!
+    @IBOutlet weak var itemDescription: UITextView!
+    @IBOutlet weak var itemImage: UIImageView!
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
