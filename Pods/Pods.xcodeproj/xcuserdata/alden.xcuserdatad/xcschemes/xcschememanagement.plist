@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>MaterialKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Pods-Lost and Found.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2E4A37C88D68A62EA5C1BC7A2A4D19AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40563DFD62D4260AF49D260CEECDA64D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73850773DC05DB0F801C716B2A9E95F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

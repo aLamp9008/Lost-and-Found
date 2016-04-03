@@ -8,8 +8,6 @@
 import UIKit
 import Firebase
 
-        var ref = Firebase(url: "https://incandescent-fire-6594.firebaseio.com/web/saving-data/fireblog")
-
 class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     

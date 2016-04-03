@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 
+var ref = Firebase(url: "https://incandescent-fire-6594.firebaseio.com/web/saving-data/fireblog")
+
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var itemsTableView: UITableView!
@@ -17,16 +19,28 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var itemDescriptions = ["Testing...","Testing...","Testing..."]
     var itemImages = ["sampleImage","sampleImage","sampleImage"]
     
-    var refresher: UIRefreshControl!
+    
+
+    var refreshController = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        refresher = UIRefreshControl()
-        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refresher.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-        self.itemsTableView.addSubview(refresher)
+        refreshController = UIRefreshControl()
+        
+        refreshController.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        
+        refreshController.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.itemsTableView.addSubview(refreshController)
+        
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            print(snapshot.value)
+            }, withCancelBlock: { error in
+            print(error.description)
+        })
         
         
         
