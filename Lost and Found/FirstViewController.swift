@@ -14,7 +14,6 @@ var ref = Firebase(url: "https://incandescent-fire-6594.firebaseio.com/web/savin
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var testImageData = UIImage(named: "sampleImage")
     @IBOutlet weak var itemsTableView: UITableView!
     let cellIdentifier = "cell"
     var itemNames = ["Test1","Test2","Test3"]
@@ -22,14 +21,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var itemImages = ["sampleImage","sampleImage","sampleImage"]
     var datesLost = ["1/1/11","2/2/22","3/3/33"]
     var phoneNumbers = ["999","9999","99999"]
-    var images:[UIImage]?
+    var images:[UIImage]? = [UIImage(named: "sampleImage")!,UIImage(named: "sampleImage")!,UIImage(named: "sampleImage")!]
     
 
    // var refreshController: UIRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        images = [testImageData!, testImageData!, testImageData!]
         // Do any additional setup after loading the view, typically from a nib.
        // refreshController.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
        // self.itemsTableView.addSubview(refreshController)
@@ -45,7 +43,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         var number: String?
         var description: String?
         var image: UIImage?
-        
+        var base64String: String?
         
         
         // Retrieve new posts as they are added to the database
@@ -58,22 +56,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             date = stuff["value"]["dateLost"].string
             number = stuff["value"]["phoneNumber"].string
             description = stuff["value"]["description"].string
-            print(stuff["value"]["image"])
-            do{
-                    image = try UIImage(data: stuff["value"]["image"].rawData())
-            }catch{
-                print("failed")
-            }
-            
-            
-            
+//            do{
+//                    //image = try UIImage(data: stuff["value"]["image"].string)
+//            }catch{
+//                print("failed")
+//            }
+            base64String = stuff["value"]["image"].string
+            let decodedData = NSData(base64EncodedString: base64String!, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+            var decodedImage = UIImage(data: decodedData!)!
+            image = decodedImage
+            print(image)
             self.itemNames.append(name!)
             self.itemDescriptions.append(description!)
             self.datesLost.append(date!)
             self.phoneNumbers.append(number!)
             self.images?.append(image!)
-            
-            print(self.itemNames)
             self.itemsTableView.reloadData()
         })
         
