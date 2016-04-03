@@ -13,6 +13,10 @@ SPEC CHECKSUMS:
   LiquidFloatingActionButton: 12ed6f642365142f85c73eaebef8c40b6590511e
   SwiftRequest: efeebcd1a1b8f948a9121e146d6ce7ba4bbdfcfe
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: e5f7e4790fa3842cce739ea75d7d1217913f9e5e
 
 COCOAPODS: 1.0.0.beta.2
+=======
+COCOAPODS: 0.39.0
+>>>>>>> 37518f10577994b94f603dea25486cd7beb7e1bb
