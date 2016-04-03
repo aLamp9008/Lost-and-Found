@@ -8,31 +8,56 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>MaterialKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-Lost and Found.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-Lost and FoundTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-Lost and FoundUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>40563DFD62D4260AF49D260CEECDA64D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4874D535918B728AE632089E057EBDA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72F0AB00BCA7CB111EFCCD2C381E3054</key>
 		<dict>
 			<key>primary</key>
 			<true/>
