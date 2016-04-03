@@ -28,14 +28,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view, typically from a nib.
         refreshController.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
         self.itemsTableView.addSubview(refreshController)
-        
-        
-        
-        
-        
-        
-        
-        
         self.itemsTableView.rowHeight = 350
         self.itemsTableView.allowsSelection = false
         self.itemsTableView.registerNib(UINib(nibName: "LostAndFoundTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
@@ -49,9 +41,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.itemsTableView.reloadData()
         
         ref.observeEventType(.Value, withBlock: { snapshot in
-            print(snapshot.value)
+            //print(snapshot.value)
             }, withCancelBlock: { error in
-                print(error.description)
+                //print(error.description)
         })
         
         
@@ -77,6 +69,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell?.itemDescription.text = itemDescriptions[indexPath.row]
         cell?.itemImage.image = UIImage(named: itemImages[indexPath.row])
         return cell!
+    }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue)
+    {
+        // unwind
     }
 }
 

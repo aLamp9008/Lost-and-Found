@@ -150,6 +150,7 @@
                                 <state key="normal" title="Post!"/>
                                 <connections>
                                     <action selector="post:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hnk-Qz-ECk"/>
+                                    <segue destination="mxT-SC-Mrs" kind="unwind" unwindAction="unwindSegue:" id="w70-lM-if9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please write a description of this item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-rB-LJb">
@@ -249,6 +250,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <exit id="mxT-SC-Mrs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
