@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Dv-Mz-RLk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Dv-Mz-RLk">
                                 <rect key="frame" x="0.0" y="88" width="600" height="463"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -41,19 +41,30 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="D1Q-b9-YyL"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="XBf-eC-PVk"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Dv-Mz-RLk" firstAttribute="top" secondItem="v1d-5V-CcL" secondAttribute="bottom" id="18S-86-93P"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5Dv-Mz-RLk" secondAttribute="bottom" id="4xN-CD-kwX"/>
                             <constraint firstAttribute="trailing" secondItem="wSh-cR-6rN" secondAttribute="trailing" id="Mba-jl-QyD"/>
                             <constraint firstItem="v1d-5V-CcL" firstAttribute="top" secondItem="wSh-cR-6rN" secondAttribute="bottom" id="Rge-l3-oCJ"/>
                             <constraint firstItem="wSh-cR-6rN" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="dYc-yY-xEb"/>
                             <constraint firstItem="wSh-cR-6rN" firstAttribute="leading" secondItem="v1d-5V-CcL" secondAttribute="leading" id="hns-Bi-D5f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Dv-Mz-RLk" secondAttribute="trailing" constant="-20" id="pDB-b6-P5I"/>
                             <constraint firstItem="wSh-cR-6rN" firstAttribute="trailing" secondItem="v1d-5V-CcL" secondAttribute="trailing" id="s9D-vs-0nq"/>
+                            <constraint firstItem="5Dv-Mz-RLk" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="siw-kc-lkP"/>
                             <constraint firstItem="wSh-cR-6rN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="v5h-Ae-lb9"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="itemsTableView" destination="5Dv-Mz-RLk" id="502-8m-e9Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
