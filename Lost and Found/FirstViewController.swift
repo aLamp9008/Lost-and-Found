@@ -21,18 +21,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
 
-    var refreshController = UIRefreshControl()
+    var refreshController: UIRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        refreshController = UIRefreshControl()
-        
-        refreshController.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        
         refreshController.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-        
         self.itemsTableView.addSubview(refreshController)
         
         
@@ -57,6 +51,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         })
         
 
+        
+    }
+    
+    func refresh() {
+        
+        self.itemsTableView.reloadData()
         
     }
 
