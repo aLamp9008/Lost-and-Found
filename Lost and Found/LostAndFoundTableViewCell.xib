@@ -41,7 +41,7 @@
                         <color key="textColor" red="0.33511943717277481" green="0.33511943717277481" blue="0.33511943717277481" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-7h-JSb">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-7h-JSb">
                         <rect key="frame" x="33" y="368" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="Xfx-jG-HxG"/>
@@ -55,7 +55,7 @@
                             </mask>
                         </variation>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gb-he-7pm">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gb-he-7pm">
                         <rect key="frame" x="162" y="368" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="2Oe-tY-1cO"/>
@@ -63,7 +63,7 @@
                         </constraints>
                         <state key="normal" backgroundImage="Message-100"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rma-c6-25n">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rma-c6-25n">
                         <rect key="frame" x="291" y="368" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="ARU-rE-qpI"/>
