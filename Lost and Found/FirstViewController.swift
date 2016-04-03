@@ -18,7 +18,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var itemNames = ["Test1","Test2","Test3"]
     var itemDescriptions = ["Testing...","Testing...","Testing..."]
     var itemImages = ["sampleImage","sampleImage","sampleImage"]
-    
+    var datesLost = ["1/1/11","2/2/22","3/3/33"]
+    var phoneNumbers = ["999","9999","99999"]
+    var images = ["sampleImage","sampleImage","sampleImage"]
     
 
     var refreshController: UIRefreshControl = UIRefreshControl()
@@ -40,12 +42,23 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.itemsTableView.reloadData()
         
-        ref.observeEventType(.Value, withBlock: { snapshot in
-            //print(snapshot.value)
-            }, withCancelBlock: { error in
-                //print(error.description)
+        ref.observeEventType(.ChildAdded, withBlock: { snapshot in
+            let personsName = snapshot.value.objectForKey("name")
+            let dateLost = snapshot.value.objectForKey("dateLost")
+            let personsNumber = snapshot.value.objectForKey("phoneNumber")
+            let image = snapshot.value.objectForKey("image")
+            let description = snapshot.value.objectForKey("description")
+            
+            self.itemNames.append(String(personsName))
+            self.itemDescriptions.append(String(description))
+            self.datesLost.append(String(dateLost))
+            self.phoneNumbers.append(String(personsNumber))
+            self.images.append(String(image))
+            
+            print(self.itemNames)
+            print(self.itemDescriptions)
+            
         })
-        
         
         
     }
