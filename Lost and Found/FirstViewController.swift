@@ -31,11 +31,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         
-        ref.observeEventType(.Value, withBlock: { snapshot in
-            print(snapshot.value)
-            }, withCancelBlock: { error in
-            print(error.description)
-        })
+        
         
         
         
@@ -44,13 +40,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.itemsTableView.allowsSelection = false
         self.itemsTableView.registerNib(UINib(nibName: "LostAndFoundTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
         // Attach a closure to read the data at our posts reference
-        
-        ref.observeEventType(.Value, withBlock: { snapshot in
-            print(snapshot.value)
-            }, withCancelBlock: { error in
-                print(error.description)
-        })
-        
 
         
     }
@@ -58,6 +47,14 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func refresh() {
         
         self.itemsTableView.reloadData()
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            print(snapshot.value)
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+        
+        
         
     }
 
