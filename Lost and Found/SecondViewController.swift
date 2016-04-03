@@ -42,11 +42,13 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func post(sender: AnyObject) {
         
-        var alanisawesome = ["name":  usersName.text, "description": usersDescription.text, "dateLost": dateLost.text, "phoneNumber": phoneNumber.text]
+        let base64String = imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+        
+        var userToBeAdded = ["name":  usersName.text, "description": usersDescription.text, "dateLost": dateLost.text, "phoneNumber": phoneNumber.text, "image": base64String]
         
         var usersRef = ref.childByAppendingPath("users")
         
-        var users = ["alanisawesome": alanisawesome]
+        var users = [String(usersName.text!): userToBeAdded]
         usersRef.setValue(users)
         
     }
