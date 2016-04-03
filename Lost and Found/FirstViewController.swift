@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LiquidFloatingActionButton
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -19,12 +20,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        print("nothgin")
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        print("asdfasdfasdfasdf")
         self.itemsTableView.rowHeight = 350
         self.itemsTableView.allowsSelection = false
         self.itemsTableView.registerNib(UINib(nibName: "LostAndFoundTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
