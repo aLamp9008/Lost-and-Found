@@ -1,6 +1,0 @@
-framework module Pods_Lost_and_FoundTests {
-  umbrella header "Pods-Lost and FoundTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

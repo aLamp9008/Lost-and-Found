@@ -1,15 +1,25 @@
 PODS:
   - Firebase (2.5.1)
   - MaterialKit (0.4)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Firebase (>= 2.5.1)
   - MaterialKit (~> 0.4)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 079c85969db3a9dd2abac0b5d2c5f420453172ff
-
-COCOAPODS: 1.0.0.beta.2
+COCOAPODS: 0.39.0

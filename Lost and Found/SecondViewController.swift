@@ -46,7 +46,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         var usersRef = ref.childByAppendingPath("users")
         
-        var users = [String(usersName.text!): userToBeAdded]
+        var users = ["value": userToBeAdded]
         usersRef.setValue(users)
         
     }
