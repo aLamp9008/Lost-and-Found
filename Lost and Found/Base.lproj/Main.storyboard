@@ -178,6 +178,21 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EM8-dx-lmY">
+                                <rect key="frame" x="10" y="573" width="384" height="61"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GPD-zX-D0v"/>
+                                    <constraint firstAttribute="height" constant="61" id="JBL-ay-m5B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GPD-zX-D0v"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3a9-7j-udq">
                                 <rect key="frame" x="10" y="361" width="229" height="175"/>
                                 <constraints>
@@ -211,23 +226,9 @@
                                 <state key="normal" title="Post!"/>
                                 <connections>
                                     <action selector="post:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Hnk-Qz-ECk"/>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="6U6-na-V6Z"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EM8-dx-lmY">
-                                <rect key="frame" x="10" y="573" width="384" height="61"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="GPD-zX-D0v"/>
-                                    <constraint firstAttribute="height" constant="61" id="JBL-ay-m5B"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="GPD-zX-D0v"/>
-                                    </mask>
-                                </variation>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -321,4 +322,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6U6-na-V6Z"/>
+    </inferredMetricsTieBreakers>
 </document>
