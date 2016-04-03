@@ -40,17 +40,6 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.presentViewController(image, animated: true, completion: nil)
     }
     
-    @IBAction func takePhoto(sender: AnyObject) {
-        
-        let image = UIImagePickerController()
-        image.delegate = self
-        image.sourceType = UIImagePickerControllerSourceType.Camera
-        image.allowsEditing = true
-        
-        self.presentViewController(image, animated: true, completion: nil)
-        
-        
-    }
     
     
     
