@@ -14,12 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>LiquidFloatingActionButton-LiquidFloatingActionButton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>LiquidFloatingActionButton.xcscheme</key>
+		<key>MaterialKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E4A37C88D68A62EA5C1BC7A2A4D19AE</key>
+		<key>36DF15AC6E508AC52EC85AF10982B1D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73850773DC05DB0F801C716B2A9E95F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C53D810B792A5112A4F3826BF099CB39</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E55514C0D63F11CE96B11D848896CC37</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECB4143196184B0E0EA02182DB2B9CCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

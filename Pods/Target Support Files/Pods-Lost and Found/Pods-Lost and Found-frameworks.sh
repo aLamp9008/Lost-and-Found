@@ -86,10 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Lost and Found/Alamofire.framework"
   install_framework "Pods-Lost and Found/Firebase.framework"
-  install_framework "Pods-Lost and Found/LiquidFloatingActionButton.framework"
+  install_framework "Pods-Lost and Found/MaterialKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Lost and Found/Alamofire.framework"
   install_framework "Pods-Lost and Found/Firebase.framework"
-  install_framework "Pods-Lost and Found/LiquidFloatingActionButton.framework"
+  install_framework "Pods-Lost and Found/MaterialKit.framework"
 fi

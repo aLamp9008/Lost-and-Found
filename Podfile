@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'Lost and Found' do
 pod 'Firebase', '>= 2.5.1'
-pod 'LiquidFloatingActionButton', :git => 'https://github.com/yoavlt/LiquidFloatingActionButton.git', :branch => 'swift-2.0'
+pod 'MaterialKit', '~> 0.4'
 pod 'Alamofire', '~> 3.0'
 end
 
