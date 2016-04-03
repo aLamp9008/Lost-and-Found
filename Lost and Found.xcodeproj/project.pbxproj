@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		40E0E856CE80963C03E5D913 /* libPods-Lost and FoundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D09F0388E94089E8C2AD43 /* libPods-Lost and FoundTests.a */; };
 		562A9872B21A5583BCC97DE3 /* libPods-Lost and FoundUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C921DB035E85D49EC0BB98A0 /* libPods-Lost and FoundUITests.a */; };
+		79FA116FD900E0D40DF00F02 /* Pods_Lost_and_Found.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A171E04C57DB1CF0C5D354E9 /* Pods_Lost_and_Found.framework */; };
 		967DC45D1CB0885400097CA9 /* LostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967DC45B1CB0885400097CA9 /* LostAndFoundTableViewCell.swift */; };
 		967DC45E1CB0885400097CA9 /* LostAndFoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967DC45C1CB0885400097CA9 /* LostAndFoundTableViewCell.xib */; };
 		BFD400C41CB077FD0080C6EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400C31CB077FD0080C6EA /* AppDelegate.swift */; };
@@ -19,7 +20,6 @@
 		BFD400D01CB077FD0080C6EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD400CE1CB077FD0080C6EA /* LaunchScreen.storyboard */; };
 		BFD400DB1CB077FD0080C6EA /* Lost_and_FoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400DA1CB077FD0080C6EA /* Lost_and_FoundTests.swift */; };
 		BFD400E61CB077FD0080C6EA /* Lost_and_FoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400E51CB077FD0080C6EA /* Lost_and_FoundUITests.swift */; };
-		CA8793EA15E47642A1CAB8AE /* libPods-Lost and Found.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DCA6FFDC208B55CDAA12C8 /* libPods-Lost and Found.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 		93868F4AD1D451A2C802278B /* Pods-Lost and FoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and FoundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and FoundUITests/Pods-Lost and FoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		967DC45B1CB0885400097CA9 /* LostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
 		967DC45C1CB0885400097CA9 /* LostAndFoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LostAndFoundTableViewCell.xib; sourceTree = "<group>"; };
+		A171E04C57DB1CF0C5D354E9 /* Pods_Lost_and_Found.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lost_and_Found.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD400C01CB077FD0080C6EA /* Lost and Found.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost and Found.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD400C31CB077FD0080C6EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD400C51CB077FD0080C6EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		BFD400E71CB077FD0080C6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C921DB035E85D49EC0BB98A0 /* libPods-Lost and FoundUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lost and FoundUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FBBEB63147360328AE26C4 /* Pods-Lost and Found.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and Found.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and Found/Pods-Lost and Found.debug.xcconfig"; sourceTree = "<group>"; };
-		F0DCA6FFDC208B55CDAA12C8 /* libPods-Lost and Found.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lost and Found.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8793EA15E47642A1CAB8AE /* libPods-Lost and Found.a in Frameworks */,
+				79FA116FD900E0D40DF00F02 /* Pods_Lost_and_Found.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +98,9 @@
 		0D72C71B01C9ADAFD4395ACA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0DCA6FFDC208B55CDAA12C8 /* libPods-Lost and Found.a */,
 				24D09F0388E94089E8C2AD43 /* libPods-Lost and FoundTests.a */,
 				C921DB035E85D49EC0BB98A0 /* libPods-Lost and FoundUITests.a */,
+				A171E04C57DB1CF0C5D354E9 /* Pods_Lost_and_Found.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
