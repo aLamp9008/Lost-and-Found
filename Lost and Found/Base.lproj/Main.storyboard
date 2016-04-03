@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Dv-Mz-RLk">
-                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="LMN-oG-uEm">
@@ -36,20 +36,13 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="XBf-eC-PVk"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="v1d-5V-CcL">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5Dv-Mz-RLk" firstAttribute="top" secondItem="v1d-5V-CcL" secondAttribute="bottom" id="18S-86-93P"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5Dv-Mz-RLk" secondAttribute="bottom" id="4xN-CD-kwX"/>
-                            <constraint firstItem="v1d-5V-CcL" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="Bvu-BE-7Bd"/>
-                            <constraint firstItem="v1d-5V-CcL" firstAttribute="leading" secondItem="5Dv-Mz-RLk" secondAttribute="leading" id="R2f-58-eaJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Dv-Mz-RLk" secondAttribute="trailing" constant="-20" id="pDB-b6-P5I"/>
                             <constraint firstItem="5Dv-Mz-RLk" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="siw-kc-lkP"/>
-                            <constraint firstItem="v1d-5V-CcL" firstAttribute="trailing" secondItem="5Dv-Mz-RLk" secondAttribute="trailing" id="tBt-nn-4I7"/>
+                            <constraint firstItem="5Dv-Mz-RLk" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="wiZ-o0-UKd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lost Items" id="vFO-qL-d1c">
