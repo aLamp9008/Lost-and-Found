@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -16,13 +17,32 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var itemDescriptions = ["Testing...","Testing...","Testing..."]
     var itemImages = ["sampleImage","sampleImage","sampleImage"]
     
+    var refresher: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+        self.itemsTableView.addSubview(refresher)
+        
+        
+        
+        
         self.itemsTableView.rowHeight = 350
         self.itemsTableView.allowsSelection = false
         self.itemsTableView.registerNib(UINib(nibName: "LostAndFoundTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        // Attach a closure to read the data at our posts reference
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            print(snapshot.value)
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+        
+
         
     }
 

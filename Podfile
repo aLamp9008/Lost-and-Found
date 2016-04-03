@@ -6,7 +6,6 @@ use_frameworks!
 target 'Lost and Found' do
 pod 'Firebase', '>= 2.5.1'
 pod 'MaterialKit', '~> 0.4'
-pod 'Alamofire', '~> 3.0'
 end
 
 target 'Lost and FoundTests' do

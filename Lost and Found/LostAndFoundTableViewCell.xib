@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -42,14 +42,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-7h-JSb">
-                        <rect key="frame" x="8" y="368" width="50" height="50"/>
+                        <rect key="frame" x="33" y="368" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="Xfx-jG-HxG"/>
+                            <constraint firstAttribute="width" constant="50" id="aP4-EH-Ixt"/>
+                            <constraint firstAttribute="height" constant="50" id="miT-XG-qro"/>
                         </constraints>
                         <state key="normal" image="Phone-100"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xfx-jG-HxG"/>
+                            </mask>
+                        </variation>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gb-he-7pm">
-                        <rect key="frame" x="137" y="368" width="50" height="50"/>
+                        <rect key="frame" x="162" y="368" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="2Oe-tY-1cO"/>
                             <constraint firstAttribute="width" constant="50" id="5jg-VT-Cwe"/>
@@ -57,12 +64,20 @@
                         <state key="normal" backgroundImage="Message-100"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rma-c6-25n">
-                        <rect key="frame" x="266" y="368" width="50" height="50"/>
+                        <rect key="frame" x="291" y="368" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="ARU-rE-qpI"/>
                             <constraint firstAttribute="width" constant="50" id="R6L-Xh-tI2"/>
+                            <constraint firstAttribute="width" constant="50" id="k0i-KL-0aa"/>
+                            <constraint firstAttribute="height" constant="50" id="yt0-9c-7lD"/>
                         </constraints>
                         <state key="normal" backgroundImage="More-100"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ARU-rE-qpI"/>
+                                <exclude reference="R6L-Xh-tI2"/>
+                            </mask>
+                        </variation>
                     </button>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osu-Mi-HY3">
                         <rect key="frame" x="8" y="304" width="302" height="56"/>
@@ -76,8 +91,10 @@
                     </textView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Rma-c6-25n" firstAttribute="top" secondItem="osu-Mi-HY3" secondAttribute="bottom" constant="8" id="0Ih-Kn-dRS"/>
                     <constraint firstItem="Rma-c6-25n" firstAttribute="top" secondItem="osu-Mi-HY3" secondAttribute="bottom" constant="8" id="1BO-Jt-vMd"/>
                     <constraint firstItem="xQi-Ce-I35" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="40T-gz-3EV"/>
+                    <constraint firstItem="1Gb-he-7pm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="44F-xA-hbA"/>
                     <constraint firstItem="yX0-dv-kzR" firstAttribute="top" secondItem="AxR-G8-AyU" secondAttribute="bottom" constant="8" id="4iE-50-N11"/>
                     <constraint firstItem="yX0-dv-kzR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="5mS-DP-NqH"/>
                     <constraint firstItem="Rma-c6-25n" firstAttribute="bottom" secondItem="TnK-7h-JSb" secondAttribute="bottom" id="5uq-h9-T10"/>
@@ -88,6 +105,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="AxR-G8-AyU" secondAttribute="trailing" constant="2" id="9lW-sJ-VRh"/>
                     <constraint firstItem="AxR-G8-AyU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="BdZ-JY-VLY"/>
                     <constraint firstItem="Rma-c6-25n" firstAttribute="top" secondItem="1Gb-he-7pm" secondAttribute="top" id="Lo0-3Y-5Ts"/>
+                    <constraint firstItem="1Gb-he-7pm" firstAttribute="leading" secondItem="TnK-7h-JSb" secondAttribute="trailing" constant="79" id="MB5-sc-zfO"/>
                     <constraint firstItem="1Gb-he-7pm" firstAttribute="leading" secondItem="TnK-7h-JSb" secondAttribute="trailing" constant="79" id="O0c-Zo-tg8"/>
                     <constraint firstItem="1Gb-he-7pm" firstAttribute="top" secondItem="osu-Mi-HY3" secondAttribute="bottom" constant="8" id="P0O-uX-bvi"/>
                     <constraint firstItem="AxR-G8-AyU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Pmm-Uz-zOl"/>
@@ -97,7 +115,9 @@
                     <constraint firstAttribute="trailingMargin" secondItem="osu-Mi-HY3" secondAttribute="trailing" constant="2" id="YEn-cu-MWL"/>
                     <constraint firstItem="1Gb-he-7pm" firstAttribute="leading" secondItem="TnK-7h-JSb" secondAttribute="trailing" constant="79" id="bRM-6n-7dg"/>
                     <constraint firstItem="xQi-Ce-I35" firstAttribute="top" secondItem="1Gb-he-7pm" secondAttribute="bottom" constant="8" id="csd-rK-7jP"/>
+                    <constraint firstItem="Rma-c6-25n" firstAttribute="leading" secondItem="1Gb-he-7pm" secondAttribute="trailing" constant="79" id="fcj-kq-Kxd"/>
                     <constraint firstItem="Rma-c6-25n" firstAttribute="bottom" secondItem="1Gb-he-7pm" secondAttribute="bottom" id="hlf-QX-ye0"/>
+                    <constraint firstItem="xQi-Ce-I35" firstAttribute="top" secondItem="Rma-c6-25n" secondAttribute="bottom" constant="8" id="iKb-1f-dHZ"/>
                     <constraint firstItem="xQi-Ce-I35" firstAttribute="top" secondItem="Rma-c6-25n" secondAttribute="bottom" constant="8" symbolic="YES" id="kLg-qC-od3"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Rma-c6-25n" secondAttribute="trailing" constant="-4" id="klC-A9-fc2"/>
                     <constraint firstItem="Rma-c6-25n" firstAttribute="leading" secondItem="1Gb-he-7pm" secondAttribute="trailing" constant="79" id="lzu-b2-H4K"/>
@@ -105,11 +125,27 @@
                     <constraint firstItem="Rma-c6-25n" firstAttribute="top" secondItem="TnK-7h-JSb" secondAttribute="top" id="o4m-GA-vzb"/>
                     <constraint firstItem="yX0-dv-kzR" firstAttribute="top" secondItem="AxR-G8-AyU" secondAttribute="bottom" constant="8" id="rD3-DU-Sbk"/>
                     <constraint firstItem="osu-Mi-HY3" firstAttribute="top" secondItem="yX0-dv-kzR" secondAttribute="bottom" constant="8" id="uuU-qz-xkA"/>
+                    <constraint firstItem="TnK-7h-JSb" firstAttribute="top" secondItem="osu-Mi-HY3" secondAttribute="bottom" constant="8" id="w8s-LQ-pmg"/>
+                    <constraint firstItem="TnK-7h-JSb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="xMM-ZS-2VO"/>
                     <constraint firstItem="osu-Mi-HY3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yno-N0-aAD"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="Uok-R5-TQQ"/>
+                        <exclude reference="QMZ-z6-5Ag"/>
+                        <exclude reference="44F-xA-hbA"/>
+                        <exclude reference="O0c-Zo-tg8"/>
+                        <exclude reference="bRM-6n-7dg"/>
+                        <exclude reference="1BO-Jt-vMd"/>
+                        <exclude reference="5uq-h9-T10"/>
+                        <exclude reference="6Dk-aN-O79"/>
+                        <exclude reference="Lo0-3Y-5Ts"/>
+                        <exclude reference="X3X-4n-NA2"/>
+                        <exclude reference="hlf-QX-ye0"/>
+                        <exclude reference="klC-A9-fc2"/>
+                        <exclude reference="lzu-b2-H4K"/>
+                        <exclude reference="o4m-GA-vzb"/>
+                        <exclude reference="kLg-qC-od3"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>

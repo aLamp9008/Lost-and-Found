@@ -6,28 +6,28 @@
 //  Copyright © 2016 JasonAldenVincent. All rights reserved.
 //
 import UIKit
+import Firebase
 
+        var ref = Firebase(url: "https://incandescent-fire-6594.firebaseio.com/web/saving-data/fireblog")
 
 class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     
-    
+    var imageData: NSData?
     @IBOutlet weak var usersName: UITextField!
     @IBOutlet weak var dateLost: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var usersImage: UIImageView!
-    
+    @IBOutlet weak var usersDescription: UITextView!
     
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
         print("printed")
-        
         self.dismissViewControllerAnimated(true, completion: nil)
-        
         usersImage.image = image
-        
+        imageData = UIImagePNGRepresentation(usersImage.image!)
     }
     
     @IBAction func importImage(sender: AnyObject) {
@@ -40,6 +40,16 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.presentViewController(image, animated: true, completion: nil)
     }
     
+    @IBAction func post(sender: AnyObject) {
+        
+        var alanisawesome = ["name":  usersName.text, "description": usersDescription.text, "dateLost": dateLost.text, "phoneNumber": phoneNumber.text]
+        
+        var usersRef = ref.childByAppendingPath("users")
+        
+        var users = ["alanisawesome": alanisawesome]
+        usersRef.setValue(users)
+        
+    }
     
     
     
