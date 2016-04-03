@@ -30,6 +30,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.itemsTableView.addSubview(refreshController)
         
         
+        
         ref.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
             }, withCancelBlock: { error in
