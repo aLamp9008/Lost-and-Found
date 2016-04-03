@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E0E856CE80963C03E5D913 /* libPods-Lost and FoundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D09F0388E94089E8C2AD43 /* libPods-Lost and FoundTests.a */; };
+		562A9872B21A5583BCC97DE3 /* libPods-Lost and FoundUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C921DB035E85D49EC0BB98A0 /* libPods-Lost and FoundUITests.a */; };
+		967DC45D1CB0885400097CA9 /* LostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967DC45B1CB0885400097CA9 /* LostAndFoundTableViewCell.swift */; };
+		967DC45E1CB0885400097CA9 /* LostAndFoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967DC45C1CB0885400097CA9 /* LostAndFoundTableViewCell.xib */; };
 		BFD400C41CB077FD0080C6EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400C31CB077FD0080C6EA /* AppDelegate.swift */; };
 		BFD400C61CB077FD0080C6EA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400C51CB077FD0080C6EA /* FirstViewController.swift */; };
 		BFD400C81CB077FD0080C6EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400C71CB077FD0080C6EA /* SecondViewController.swift */; };
@@ -15,6 +19,7 @@
 		BFD400D01CB077FD0080C6EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD400CE1CB077FD0080C6EA /* LaunchScreen.storyboard */; };
 		BFD400DB1CB077FD0080C6EA /* Lost_and_FoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400DA1CB077FD0080C6EA /* Lost_and_FoundTests.swift */; };
 		BFD400E61CB077FD0080C6EA /* Lost_and_FoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD400E51CB077FD0080C6EA /* Lost_and_FoundUITests.swift */; };
+		CA8793EA15E47642A1CAB8AE /* libPods-Lost and Found.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DCA6FFDC208B55CDAA12C8 /* libPods-Lost and Found.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21626B29285C285E8DF806C5 /* Pods-Lost and FoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and FoundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and FoundUITests/Pods-Lost and FoundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24D09F0388E94089E8C2AD43 /* libPods-Lost and FoundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lost and FoundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2677F90DB1F586F3F1E629 /* Pods-Lost and FoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and FoundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and FoundTests/Pods-Lost and FoundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F69D58A15693FC2DE7C0799 /* Pods-Lost and FoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and FoundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and FoundTests/Pods-Lost and FoundTests.release.xcconfig"; sourceTree = "<group>"; };
+		42CB20D330A08190F6BCB0C1 /* Pods-Lost and Found.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and Found.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and Found/Pods-Lost and Found.release.xcconfig"; sourceTree = "<group>"; };
+		93868F4AD1D451A2C802278B /* Pods-Lost and FoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and FoundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and FoundUITests/Pods-Lost and FoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		967DC45B1CB0885400097CA9 /* LostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
+		967DC45C1CB0885400097CA9 /* LostAndFoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LostAndFoundTableViewCell.xib; sourceTree = "<group>"; };
 		BFD400C01CB077FD0080C6EA /* Lost and Found.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost and Found.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD400C31CB077FD0080C6EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD400C51CB077FD0080C6EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		BFD400E11CB077FD0080C6EA /* Lost and FoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lost and FoundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD400E51CB077FD0080C6EA /* Lost_and_FoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lost_and_FoundUITests.swift; sourceTree = "<group>"; };
 		BFD400E71CB077FD0080C6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C921DB035E85D49EC0BB98A0 /* libPods-Lost and FoundUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lost and FoundUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FBBEB63147360328AE26C4 /* Pods-Lost and Found.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost and Found.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lost and Found/Pods-Lost and Found.debug.xcconfig"; sourceTree = "<group>"; };
+		F0DCA6FFDC208B55CDAA12C8 /* libPods-Lost and Found.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lost and Found.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8793EA15E47642A1CAB8AE /* libPods-Lost and Found.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E0E856CE80963C03E5D913 /* libPods-Lost and FoundTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562A9872B21A5583BCC97DE3 /* libPods-Lost and FoundUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D72C71B01C9ADAFD4395ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0DCA6FFDC208B55CDAA12C8 /* libPods-Lost and Found.a */,
+				24D09F0388E94089E8C2AD43 /* libPods-Lost and FoundTests.a */,
+				C921DB035E85D49EC0BB98A0 /* libPods-Lost and FoundUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1191D7CB8DB8BCF5D20433E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBBEB63147360328AE26C4 /* Pods-Lost and Found.debug.xcconfig */,
+				42CB20D330A08190F6BCB0C1 /* Pods-Lost and Found.release.xcconfig */,
+				2D2677F90DB1F586F3F1E629 /* Pods-Lost and FoundTests.debug.xcconfig */,
+				3F69D58A15693FC2DE7C0799 /* Pods-Lost and FoundTests.release.xcconfig */,
+				93868F4AD1D451A2C802278B /* Pods-Lost and FoundUITests.debug.xcconfig */,
+				21626B29285C285E8DF806C5 /* Pods-Lost and FoundUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BFD400B71CB077FD0080C6EA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				BFD400D91CB077FD0080C6EA /* Lost and FoundTests */,
 				BFD400E41CB077FD0080C6EA /* Lost and FoundUITests */,
 				BFD400C11CB077FD0080C6EA /* Products */,
+				1191D7CB8DB8BCF5D20433E5 /* Pods */,
+				0D72C71B01C9ADAFD4395ACA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +146,8 @@
 				BFD400C31CB077FD0080C6EA /* AppDelegate.swift */,
 				BFD400C51CB077FD0080C6EA /* FirstViewController.swift */,
 				BFD400C71CB077FD0080C6EA /* SecondViewController.swift */,
+				967DC45B1CB0885400097CA9 /* LostAndFoundTableViewCell.swift */,
+				967DC45C1CB0885400097CA9 /* LostAndFoundTableViewCell.xib */,
 				BFD400C91CB077FD0080C6EA /* Main.storyboard */,
 				BFD400CC1CB077FD0080C6EA /* Assets.xcassets */,
 				BFD400CE1CB077FD0080C6EA /* LaunchScreen.storyboard */,
@@ -135,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFD400EA1CB077FD0080C6EA /* Build configuration list for PBXNativeTarget "Lost and Found" */;
 			buildPhases = (
+				DF744FD420D8F549CE27A39C /* Check Pods Manifest.lock */,
 				BFD400BC1CB077FD0080C6EA /* Sources */,
 				BFD400BD1CB077FD0080C6EA /* Frameworks */,
 				BFD400BE1CB077FD0080C6EA /* Resources */,
+				94152C04BFA3AC16CF1B1672 /* Embed Pods Frameworks */,
+				959F922558B14DF4F5171588 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFD400ED1CB077FD0080C6EA /* Build configuration list for PBXNativeTarget "Lost and FoundTests" */;
 			buildPhases = (
+				E22B3C7A5C87C404A095B42A /* Check Pods Manifest.lock */,
 				BFD400D21CB077FD0080C6EA /* Sources */,
 				BFD400D31CB077FD0080C6EA /* Frameworks */,
 				BFD400D41CB077FD0080C6EA /* Resources */,
+				870C7EB87997BD82EBD19198 /* Embed Pods Frameworks */,
+				E80C194FB3D8EE59CEB07158 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFD400F01CB077FD0080C6EA /* Build configuration list for PBXNativeTarget "Lost and FoundUITests" */;
 			buildPhases = (
+				14E1A7F9B8B752E5C0D10673 /* Check Pods Manifest.lock */,
 				BFD400DD1CB077FD0080C6EA /* Sources */,
 				BFD400DE1CB077FD0080C6EA /* Frameworks */,
 				BFD400DF1CB077FD0080C6EA /* Resources */,
+				B51C5B82AB36EE37699B984D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +288,7 @@
 			files = (
 				BFD400D01CB077FD0080C6EA /* LaunchScreen.storyboard in Resources */,
 				BFD400CD1CB077FD0080C6EA /* Assets.xcassets in Resources */,
+				967DC45E1CB0885400097CA9 /* LostAndFoundTableViewCell.xib in Resources */,
 				BFD400CB1CB077FD0080C6EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +309,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14E1A7F9B8B752E5C0D10673 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		870C7EB87997BD82EBD19198 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lost and FoundTests/Pods-Lost and FoundTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94152C04BFA3AC16CF1B1672 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lost and Found/Pods-Lost and Found-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959F922558B14DF4F5171588 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lost and Found/Pods-Lost and Found-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B51C5B82AB36EE37699B984D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lost and FoundUITests/Pods-Lost and FoundUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF744FD420D8F549CE27A39C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E22B3C7A5C87C404A095B42A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E80C194FB3D8EE59CEB07158 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lost and FoundTests/Pods-Lost and FoundTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFD400BC1CB077FD0080C6EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +439,7 @@
 			files = (
 				BFD400C81CB077FD0080C6EA /* SecondViewController.swift in Sources */,
 				BFD400C41CB077FD0080C6EA /* AppDelegate.swift in Sources */,
+				967DC45D1CB0885400097CA9 /* LostAndFoundTableViewCell.swift in Sources */,
 				BFD400C61CB077FD0080C6EA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +578,7 @@
 		};
 		BFD400EB1CB077FD0080C6EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FBBEB63147360328AE26C4 /* Pods-Lost and Found.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lost and Found/Info.plist";
@@ -410,6 +590,7 @@
 		};
 		BFD400EC1CB077FD0080C6EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CB20D330A08190F6BCB0C1 /* Pods-Lost and Found.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lost and Found/Info.plist";
@@ -421,6 +602,7 @@
 		};
 		BFD400EE1CB077FD0080C6EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2677F90DB1F586F3F1E629 /* Pods-Lost and FoundTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Lost and FoundTests/Info.plist";
@@ -433,6 +615,7 @@
 		};
 		BFD400EF1CB077FD0080C6EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F69D58A15693FC2DE7C0799 /* Pods-Lost and FoundTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Lost and FoundTests/Info.plist";
@@ -445,6 +628,7 @@
 		};
 		BFD400F11CB077FD0080C6EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93868F4AD1D451A2C802278B /* Pods-Lost and FoundUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Lost and FoundUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +641,7 @@
 		};
 		BFD400F21CB077FD0080C6EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21626B29285C285E8DF806C5 /* Pods-Lost and FoundUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Lost and FoundUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +671,7 @@
 				BFD400EC1CB077FD0080C6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFD400ED1CB077FD0080C6EA /* Build configuration list for PBXNativeTarget "Lost and FoundTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +680,7 @@
 				BFD400EF1CB077FD0080C6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFD400F01CB077FD0080C6EA /* Build configuration list for PBXNativeTarget "Lost and FoundUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +689,7 @@
 				BFD400F21CB077FD0080C6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
